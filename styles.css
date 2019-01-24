@@ -42,6 +42,10 @@
 	font-family: 'Sarabun', sans-serif;
 }
 
+.content-credit {
+	padding: 20px;
+}
+
 .content #content-boxes {
 	max-width: 33%;
 	display: inline-block;
@@ -123,4 +127,17 @@
 
 .footer #copyright {
 	color: #000;
+}
+
+.content-underconstruct {
+	padding: 20px;
+}
+
+.content-underconstruct div img {
+	width: 250px;
+	height: 250px;
+}
+
+.content-underconstruct div p {
+	text-align: center;
 }
