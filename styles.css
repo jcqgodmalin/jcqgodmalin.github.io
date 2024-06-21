@@ -1,6 +1,7 @@
-* {
+*,body {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 a{
@@ -26,150 +27,299 @@ a::after{
 	z-index: 9999;
 	background: url(img/ellipsis.gif) center no-repeat #fff;
 }
-.main {
-	position: relative;
-	padding-top: 20px;
-	padding-left: 50px;
-	padding-right: 50px;
-}
 
-.head {
-	padding-top: 200px;
-	padding-bottom: 50px;
-	height:100%;
-	/* background-color: rgb(58, 58, 58); */
-	text-align: center;
-	font-family: 'Nunito', sans-serif;
-}
-
-.my-image {
-	padding: 20px;
-}
-
-.my-image img {
-	border-radius: 50%;
-	border: 10px solid #2b2b2b;
-	widtH: 70%;
-}
-
-
-.greet-name {
-	color: #646464;
-	font-size: 50px;
-}
-#name {
-	color: #000;
-	font-weight: 1000;
-	font-size: 100px;
-}
-
-
-hr{
-	margin: 0 auto;
-	margin-bottom: 40px;
-	width: 80%;
-	
-}
-
-a#resume-download {
-	padding: 10px;
-	padding-bottom: 15px;
-	color: #000;
-	font-family: 'Nunito', sans-serif;
-	font-size: 40px;
-	text-decoration: none;
-	border-bottom: 1px solid #000;
-}
-
-.sm-icons{
-	margin-top: 50px;
-}
-.sm-icons i{
-	font-size: 60px;
-	letter-spacing: 20px;
-}
-
-
-.content {
-	margin-top:50px;
-	font-family: 'Nunito', sans-serif;
-	font-size: 40px;
-}
-
-.content div {
-	padding-left: 40px;
-	padding-right: 40px;
-	margin-bottom: 50px;
-}
-
-.titles{
-	color: #646464;
-	margin-bottom: 30px;
-}
-
-.about p {
-	word-spacing: 10px;
-	text-align: justify;
-}
-
-#tech-head, #tech-head > ul li#tech-head-1{
-	list-style-type: none;
-	color: #646464;
-	font-weight: bold;
-}
-
-#tech-head ul li {
-	color: #000;
-	font-weight: normal;
-}
-
-#exp-position, #exp-company, #traincert-source {
-	font-weight: bold;
-}
-
-.experience ul li, .traincert ul li, .tech ul li {
-	margin-left: 40px;
-}
-
-.footer {
-	font-family: 'Nunito', sans-serif;
-	font-size: 30px;
-	padding: 40px;
-}
-
-.footer p {
-	color: #000;
-	text-align: center;
-}
-
-#typing-container {
-	text-align: center;
-	height: 50px;
-	margin-bottom: 100px;
-}
-
-#typing-text {
-	display: inline-block;
-	vertical-align: middle;
-	color: #000;
-	letter-spacing: 2px;
-	font-size: 50px;
-}
-
-#typing-cursor {
-	display: inline-block;
-	vertical-align: middle;
-	width: 3px;
-	height: 50px;
-	background-color: #000;
-	animation: blink .75s step-end infinite;
-}
-
-@keyframes blink {
-	from, to { 
-		background-color: transparent 
+/* Styles for screens narrower than 768px (typical mobile devices) */
+@media screen and (max-width: 767px) {
+	.main {
+		overflow-x: hidden;
+		width: 100%;
+		padding: 30px;
+		padding-top: 150px;
 	}
-	50% { 
-		background-color: #000; 
+
+	.head {
+		padding-bottom: 50px;
+		text-align: center;
+		font-family: 'Nunito', sans-serif;
+	}
+
+	.my-image {
+		padding: 20px;
+	}
+
+	.my-image img {
+		border-radius: 50%;
+		border: 10px solid #2b2b2b;
+		width: 70%;
+	}
+	.greet-name {
+		color: #646464;
+		font-size: 30px;
+	}
+	#name {
+		color: #000;
+		font-weight: 1000;
+		font-size: 40px;
+	}
+
+	hr{
+		margin: 0 auto;
+		margin-bottom: 40px;
+		width: 80%;
+		
+	}
+
+	a#resume-download {
+		padding: 10px;
+		color: #000;
+		font-family: 'Nunito', sans-serif;
+		font-size: 20px;
+		text-decoration: none;
+		border: 0.5px solid #000;
+	}
+
+	.sm-icons{
+		margin-top: 30px;
+	}
+	.sm-icons i{
+		font-size: 30px;
+		margin: 10px;
+	}
+
+	.content {
+		margin-top:30px;
+		font-family: 'Nunito', sans-serif;
+	}
+
+	.content div {
+		margin-bottom: 50px;
+	}
+
+	.titles{
+		color: #646464;
+		margin-bottom: 30px;
+		font-size: 25px;
+	}
+
+	.content-boxes {
+		font-size: 20px;
+	}
+
+	.about p {
+		word-spacing: 10px;
+		text-align: justify;
+	}
+
+	#tech-head, #tech-head > ul li#tech-head-1{
+		list-style-type: none;
+		color: #646464;
+		font-weight: bold;
+	}
+
+	#tech-head ul li {
+		color: #000;
+		font-weight: normal;
+	}
+
+	#exp-position, #exp-company, #traincert-source {
+		font-weight: bold;
+	}
+
+	.experience ul li, .traincert ul li, .tech ul li {
+		margin-left: 40px;
+	}
+
+	.footer {
+		font-family: 'Nunito', sans-serif;
+		font-size: 20px;
+		padding: 40px;
+	}
+
+	.footer p {
+		color: #000;
+		text-align: center;
+	}
+
+	#typing-container {
+		text-align: center;
+		height: 30px;
+		margin-bottom: 30px;
+	}
+
+	#typing-text {
+		display: inline-block;
+		vertical-align: middle;
+		color: #000;
+		letter-spacing: 2px;
+		font-size: 30px;
+	}
+
+	#typing-cursor {
+		display: inline-block;
+		vertical-align: middle;
+		width: 3px;
+		height: 30px;
+		background-color: #000;
+		animation: blink .75s step-end infinite;
+	}
+
+	@keyframes blink {
+		from, to { 
+			background-color: transparent 
+		}
+		50% { 
+			background-color: #000; 
+		}
+	}
+}
+
+
+/* Styles for screens wider than 768px */
+@media screen and (min-width: 768px) {
+    .main {
+		position: relative;
+		padding-top: 0;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	
+	.head {
+		padding-bottom: 50px;
+		height:100%;
+		/* background-color: rgb(58, 58, 58); */
+		text-align: center;
+		font-family: 'Nunito', sans-serif;
+	}
+	
+	.my-image {
+		padding: 20px;
+	}
+	
+	.my-image img {
+		border-radius: 50%;
+		border: 10px solid #2b2b2b;
+		widtH: 70%;
+	}
+	
+	
+	.greet-name {
+		color: #646464;
+		font-size: 50px;
+	}
+	#name {
+		color: #000;
+		font-weight: 1000;
+		font-size: 100px;
+	}
+	
+	
+	hr{
+		margin: 0 auto;
+		margin-bottom: 40px;
+		width: 80%;
+		
+	}
+	
+	a#resume-download {
+		padding: 10px;
+		padding-bottom: 15px;
+		color: #000;
+		font-family: 'Nunito', sans-serif;
+		font-size: 40px;
+		text-decoration: none;
+		border-bottom: 1px solid #000;
+	}
+	
+	.sm-icons{
+		margin-top: 50px;
+	}
+	.sm-icons i{
+		font-size: 60px;
+		letter-spacing: 20px;
+	}
+	
+	
+	.content {
+		margin-top:50px;
+		font-family: 'Nunito', sans-serif;
+		font-size: 40px;
+	}
+	
+	.content div {
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-bottom: 50px;
+	}
+	
+	.titles{
+		color: #646464;
+		margin-bottom: 30px;
+	}
+	
+	.about p {
+		word-spacing: 10px;
+		text-align: justify;
+	}
+	
+	#tech-head, #tech-head > ul li#tech-head-1{
+		list-style-type: none;
+		color: #646464;
+		font-weight: bold;
+	}
+	
+	#tech-head ul li {
+		color: #000;
+		font-weight: normal;
+	}
+	
+	#exp-position, #exp-company, #traincert-source {
+		font-weight: bold;
+	}
+	
+	.experience ul li, .traincert ul li, .tech ul li {
+		margin-left: 40px;
+	}
+	
+	.footer {
+		font-family: 'Nunito', sans-serif;
+		font-size: 30px;
+		padding: 40px;
+	}
+	
+	.footer p {
+		color: #000;
+		text-align: center;
+	}
+	
+	#typing-container {
+		text-align: center;
+		height: 50px;
+		margin-bottom: 100px;
+	}
+	
+	#typing-text {
+		display: inline-block;
+		vertical-align: middle;
+		color: #000;
+		letter-spacing: 2px;
+		font-size: 50px;
+	}
+	
+	#typing-cursor {
+		display: inline-block;
+		vertical-align: middle;
+		width: 3px;
+		height: 50px;
+		background-color: #000;
+		animation: blink .75s step-end infinite;
+	}
+	
+	@keyframes blink {
+		from, to { 
+			background-color: transparent 
+		}
+		50% { 
+			background-color: #000; 
+		}
 	}
 }
