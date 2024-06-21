@@ -5,6 +5,8 @@
 		<link rel='stylesheet' href='styles.css'/>
 		<link href="https://fonts.googleapis.com/css?family=Sarabun:400" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/emoji.css@3.0.1@/emoji.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 		<link rel="shortcut icon" type="image/ico" href="img/red.ico"/>
 		<script type='text/javascript'>
 		$(window).load(function() {
@@ -16,46 +18,106 @@
 		<div class='loader'></div>
 		<div class='main'>
 			<div class='head'>
-				<h1 class='greet-name'>HI, I'M <span id='name'>JHON CHRIZEL</span></h1>
-				<h5 class='description'>Web Developer, Programmer, Trekker</h5>
+				
+				<div class='my-image' id='content-boxes'>
+					<img src='img/me.png' />
+				</div>
+				<h1 class='greet-name'>HELLO! I AM <br/><span id='name'>JHON CHRIZEL</span></h1>
+				<div id="typing-container">
+					<div id="typing-text"></div><div id="typing-cursor"></div>
+				</div>
+				<hr/>
+				<a id='resume-download' href='resume.pdf'>DOWNLOAD MY CV</a>
+				<div class="sm-icons">
+					<a href='https://www.instagram.com/jcqgodmalin' target='_blank'><i class="fab fa-instagram"></i></a>
+					<a href='https://www.facebook.com/jcqgodmalin' target='_blank'><i class="fab fa-facebook"></i></a>
+					<a href='https://ph.linkedin.com/in/jcqgodmalin' target='_blank'><i class="fab fa-linkedin"></i></a>
+					<a href='https://www.github.com/jcqgodmalin' target='_blank'><i class="fab fa-github"></i></a>
+
+				</div>
+				
 			</div>
 			<div class='content'>
 				<div class='about' id='content-boxes'>
-					<h3 id='div-title'>ABOUT ME</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus, nisl eu porttitor sollicitudin, dui nisl pulvinar lectus, id porttitor dolor risus ut orci. Praesent consequat dolor pretium tellus placerat, vitae efficitur turpis ornare. Duis congue turpis at justo varius pulvinar. Nam ac justo vel odio porta varius vitae ut.</p>
-					<br/>
-					<a id='resume-download' href='resume.pdf'>Download Resume</a>
+					<h3 class='titles'>ABOUT</h3>
+					<p>I'm a Software Engineer with 3 years of experience specializing in backend and API development. Throughout my career, I've implemented and optimized several APIs, enabling seamless integration between clients' systems and third-party applications. I'm passionate about solving complex technical challenges and ensuring robust system architecture. Outside of work, I enjoy trekking and spending quality time playing with my son, balancing my professional dedication with personal interests.</p>
 				</div>
-				<div class='my-image' id='content-boxes'>
-					<img src='img/me.png' width='250px' height='250px;' />
+				<div class='tech' id='content-boxes'>
+					<h3 class='titles'>TECH</h3>
+					<ul>
+						<li id="tech-head">Backend
+						<ul>
+							<li>Java</li>
+							<li>C#</li>
+						</ul></li>
+					</ul>
+					<ul>
+						<li id="tech-head">Frontend
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JavaScript</li>
+						</ul></li>
+					</ul>
+					<ul>
+						<li id="tech-head">Frameworks
+						<ul>
+							<li>Spring Boot</li>
+							<li>.Net</li>
+							<li>Angular</li>
+							<li>jQuery</li>
+							<li>Bootstrap</li>
+						</ul></li>
+					</ul>
+					<ul>
+						<li id="tech-head">Database
+						<ul>
+							<li>MySQL/MSSQL</li>
+						</ul></li>
+					</ul>
+					<ul>
+						<li id="tech-head">Development Tools<ul>
+							<li>Git</li>
+						</ul></li>
+						<li id="tech-head">DevOps<ul>
+							<li>Jenkins</li>
+						</ul></li>
+						<li id="tech-head">Deployment and Hosting <ul>
+							<li>Docker</li>
+							<li>Google Cloud Platform</li>
+						</ul></li>
+					</ul>
+				</div>
+				<div class='portfolio' id='content-boxes'>
+					<h3 class='titles'>PORTFOLIO</h3>
+					<p>Coming Soon</p>
+				</div>
+				<div class='experience' id='content-boxes'>
+					<h3 class='titles'>EXPERIENCE</h3>
+					<ul>
+						<li><span id="exp-position">Software Engineer</span> at <span id="exp-company">Accenture Philippines</span></li>
+						<li><span id="exp-position">Freelance Java Developer / Data Entry Specialist</span> at <span id="exp-company">UpWork</span></li>
+						<li><span id="exp-position">Software Engineer Intern</span> at <span id="exp-company">Lyceum of Iligan Foundation</span></li>
+					</ul>
+				</div>
+				<div class='traincert' id='content-boxes'>
+					<h3 class='titles'>TRAININGS AND CERTIFICATIONS</h3>
+					<ul>
+						<li><span id="traincert-title">Certificate</span> at <span id="traincert-source">Coming Soon</span></li>
+					</ul>
 				</div>
 				<div class='contact' id='content-boxes'>
-					<h3 id='div-title'>NEED SOMETHING DONE? LET'S TALK!</h3>
-					<p><img src='img/phone.png'/>&nbsp;&nbsp;&nbsp;(63)975-947-9172</p>
-					<p><img src='img/mail.png'/>&nbsp;&nbsp;&nbsp;godmalin.jc@gmail.com</p>
-					<p><img src='img/pin.png'/>&nbsp;&nbsp;&nbsp;Cebu City, PH.</p>
-
-					<p id='social-media-icons'>
-						<a href='https://www.facebook.com/jcqgodmalin' target='_blank'><img src='img/fb.png'/></a>
-						<a href='https://www.twitter.com/jancrisel' target='_blank'><img src='img/twitter.png'/></a>
-						<a href='https://ph.linkedin.com/in/jancrisel' target='_blank'><img src='img/linkedin.png'/></a>
-						<a href='https://www.github.com/jcqgodmalin' target='_blank'><img src='img/github.png'/></a>
-					</p>
+					<h3 class='titles'>CONTACT ME</h3>
+					<p><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="call:+639759479172">+(63) 975-947-9172</a></p>
+					<p><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:hello@jcqgodmalin.com">hello@jcqgodmalin.com</a></p>
+					<p><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cebu City, PH.</p>
 				</div>
 			</div>
 		</div>
 		<div class='footer'>
-			<p>
-				<span id='footer-items'>
-					<a href='underconstruct.html'>Projects</a> 
-					<a href='underconstruct.html'>&nbsp;&nbsp;&nbsp;BLOG</a>
-					<a href='underconstruct.html'>&nbsp;&nbsp;&nbsp;Testimonials</a>
-					<a href='credits.html'>&nbsp;&nbsp;&nbsp;CREDITS</a>
-				</span>
-				<br/>
-				<span id='copyright'>Copyright &copy; 2021. All Rights Reserved
-				</span>
-			</p>
+			<p>Made with &hearts; and 1 liter of Coffee by <a href="https://www.jcqgodmalin.com">Jhon</a></p>
+			<p>Copyright &copy; 2021-2024</p>
 		</div>
+		<script type="text/javascript" src="typingscript.js"></script>
 	</body>
 </html>

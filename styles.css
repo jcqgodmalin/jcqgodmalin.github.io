@@ -3,6 +3,20 @@
 	margin: 0;
 }
 
+a{
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+a::after{
+	text-decoration: none;
+	color: #000;
+}
+
 .loader {
 	position: fixed;
 	left: 0px;
@@ -12,69 +26,20 @@
 	z-index: 9999;
 	background: url(img/ellipsis.gif) center no-repeat #fff;
 }
+.main {
+	position: relative;
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
 
 .head {
-	padding-top: 50px;
+	padding-top: 200px;
 	padding-bottom: 50px;
-	background-color: #000;
+	height:100%;
+	/* background-color: rgb(58, 58, 58); */
 	text-align: center;
 	font-family: 'Sarabun', sans-serif;
-}
-
-.greet-name {
-	color: #fff;
-	font-size: 50px;
-}
-
-#name {
-	color: #00a3a3;
-}
-
-.description {
-	margin-top: 20px;
-	font-size: 20px;
-	color: #fff;
-}
-
-.content {
-	max-width: 100%;
-	padding-top: 20px;
-	font-family: 'Sarabun', sans-serif;
-}
-
-.content-credit {
-	padding: 20px;
-}
-
-.content #content-boxes {
-	max-width: 33%;
-	display: inline-block;
-	vertical-align: middle;
-}
-
-#div-title {
-	color: #00a3a3;
-	margin-bottom: 25px;
-	letter-spacing: 2px;
-}
-
-.about {
-	padding: 40px;
-}
-
-#resume-download {
-	padding: 10px;
-	padding-bottom: 15px;
-	border: 0;
-	background-color: #00a3a3;
-	color: #fff;
-	font-family: 'Sarabun', sans-serif;
-	font-size: 15px;
-	text-decoration: none;
-}
-
-#resume-download:hover {
-	background-color: #008282;
 }
 
 .my-image {
@@ -83,61 +48,121 @@
 
 .my-image img {
 	border-radius: 50%;
-	border: 5px solid #00a3a3;
+	border: 10px solid #2b2b2b;
+	widtH: 70%;
 }
 
-.contact {
-	padding: 40px;
+
+.greet-name {
+	color: #646464;
+	font-size: 50px;
+}
+#name {
+	color: #000;
+	font-weight: 1000;
+	font-size: 100px;
 }
 
-.contact p {
-	padding: 2px;
-}
-.contact p img {
-	width: 16px;
-	height: 16px;
-	vertical-align: middle;
+
+hr{
+	margin: 0 auto;
+	margin-bottom: 40px;
+	width: 80%;
+	
 }
 
-#social-media-icons {
-	width: 100%;
-	margin-top: 20px;
-}
-#social-media-icons img {
-	width: 40px;
-	height: 40px;
-	margin-right: 5px;
-	float: left;
+a#resume-download {
+	padding: 10px;
+	padding-bottom: 15px;
+	color: #000;
+	font-family: 'Sarabun', sans-serif;
+	font-size: 40px;
+	text-decoration: none;
+	border-bottom: 1px solid #000;
 }
 
-.footer {
-	padding: 20px;
+.sm-icons{
+	margin-top: 50px;
+}
+.sm-icons i{
+	font-size: 60px;
+	letter-spacing: 20px;
+}
+
+
+.content {
+	margin-top:50px;
 	font-family: 'Sarabun', sans-serif;
 }
 
-.footer #footer-items a {
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #00a3a3;
+.content div {
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-bottom: 50px;
 }
 
-.footer #footer-items a:hover {
-	color: #008282;
+.titles{
+	color: #646464;
+	margin-bottom: 30px;
 }
 
-.footer #copyright {
+#tech-head, #tech-head > ul li#tech-head-1{
+	list-style-type: none;
+	color: #646464;
+	font-weight: bold;
+}
+
+#tech-head ul li {
 	color: #000;
+	font-weight: normal;
 }
 
-.content-underconstruct {
-	padding: 20px;
+#exp-position, #exp-company, #traincert-source {
+	font-weight: bold;
 }
 
-.content-underconstruct div img {
-	width: 250px;
-	height: 250px;
+.experience ul li, .traincert ul li, .tech ul li {
+	margin-left: 40px;
 }
 
-.content-underconstruct div p {
+.footer {
+	font-family: 'Sarabun', sans-serif;
+	padding: 40px;
+}
+
+.footer p {
+	color: #000;
 	text-align: center;
+}
+
+#typing-container {
+	text-align: center;
+	height: 50px;
+	margin-bottom: 100px;
+}
+
+#typing-text {
+	display: inline-block;
+	vertical-align: middle;
+	color: #000;
+	letter-spacing: 2px;
+	font-size: 50px;
+}
+
+#typing-cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 50px;
+	background-color: #000;
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: #000; 
+	}
 }
