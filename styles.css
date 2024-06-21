@@ -175,30 +175,38 @@ a::after{
 
 
 /* Styles for screens wider than 768px */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
     .main {
 		position: relative;
 		padding-top: 0;
-		padding-left: 50px;
-		padding-right: 50px;
+		padding-left: 80px;
+		padding-right: 80px;
 	}
 	
 	.head {
 		padding-bottom: 50px;
+		padding-top: 200px;
+		margin-bottom: 100px;
 		height:100%;
 		/* background-color: rgb(58, 58, 58); */
 		text-align: center;
 		font-family: 'Nunito', sans-serif;
+		display: inline-flex;
 	}
 	
 	.my-image {
-		padding: 20px;
+		width:50%;
+	}
+
+	.info {
+		width: 50%;
 	}
 	
 	.my-image img {
 		border-radius: 50%;
 		border: 10px solid #2b2b2b;
-		widtH: 70%;
+		width: 65%;
+		margin-left: 0;
 	}
 	
 	
@@ -225,7 +233,7 @@ a::after{
 		padding-bottom: 15px;
 		color: #000;
 		font-family: 'Nunito', sans-serif;
-		font-size: 40px;
+		font-size: 30px;
 		text-decoration: none;
 		border-bottom: 1px solid #000;
 	}
@@ -242,7 +250,7 @@ a::after{
 	.content {
 		margin-top:50px;
 		font-family: 'Nunito', sans-serif;
-		font-size: 40px;
+		font-size: 30px;
 	}
 	
 	.content div {
@@ -259,6 +267,10 @@ a::after{
 	.about p {
 		word-spacing: 10px;
 		text-align: justify;
+	}
+
+	.tech-lists {
+		display: inline-flex;
 	}
 	
 	#tech-head, #tech-head > ul li#tech-head-1{
