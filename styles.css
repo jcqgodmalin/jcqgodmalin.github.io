@@ -39,7 +39,7 @@ a::after{
 	height:100%;
 	/* background-color: rgb(58, 58, 58); */
 	text-align: center;
-	font-family: 'Sarabun', sans-serif;
+	font-family: 'Nunito', sans-serif;
 }
 
 .my-image {
@@ -75,7 +75,7 @@ a#resume-download {
 	padding: 10px;
 	padding-bottom: 15px;
 	color: #000;
-	font-family: 'Sarabun', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 40px;
 	text-decoration: none;
 	border-bottom: 1px solid #000;
@@ -92,7 +92,7 @@ a#resume-download {
 
 .content {
 	margin-top:50px;
-	font-family: 'Sarabun', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 40px;
 }
 
@@ -105,6 +105,11 @@ a#resume-download {
 .titles{
 	color: #646464;
 	margin-bottom: 30px;
+}
+
+.about p {
+	word-spacing: 10px;
+	text-align: justify;
 }
 
 #tech-head, #tech-head > ul li#tech-head-1{
@@ -127,7 +132,8 @@ a#resume-download {
 }
 
 .footer {
-	font-family: 'Sarabun', sans-serif;
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
 	padding: 40px;
 }
 
